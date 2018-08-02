@@ -378,8 +378,8 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 
 | Extracting Patient information from ADT Message Types example |
 |:------------------------------------------|
-| ![](https://i.imgur.com/GI6xHPQ.png)                                |
-|                                    |
+| ![](https://i.imgur.com/GI6xHPQ.png)      |
+
 
 
 ---
@@ -509,6 +509,8 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 
 @olend
 
+---
+
 The following figure shows the mapping between the HL7 Version 2.x and FHIR Patent Resource.
 
 | Mapping |
@@ -597,4 +599,6 @@ The following is the resource template
 <a href="http://hl7.org/fhir/" target="_blank">FHIR® – Fast Healthcare Interoperability Resources</a>  
 
 <a href="https://docs.microsoft.com/en-us/azure/iot-fundamentals/" target="_blank">Azure IoT Fundamentals</a>
+
+
 
