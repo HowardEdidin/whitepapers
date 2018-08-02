@@ -15,9 +15,12 @@
 ## Protected Health Information
 > ![](https://i.imgur.com/dMrFdY8.png) The **HIPAA Privacy Rule** protects most individually identifiable health information held or transmitted by a covered entity or its business associate, in any form or medium, whether electronic, on paper, or oral. The Privacy Rule calls this information protected health information (PHI)2. Protected health information is information, including demographic information, which relates to:  
 > 
+@ul
 > * the individual’s past, present, or future physical or mental health or condition,
 > * the provision of health care to the individual, or
 > * the past, present, or future payment for the provision of health care to the individual, and that identifies the individual or for which there is a reasonable basis to believe can be used to identify the individual. Protected health information includes many common identifiers (e.g., name, address, birth date, Social Security Number) when they can be associated with the health information listed above.
+
+@ulend
 
  +++
 
@@ -48,7 +51,7 @@ IHE is a profiling organization. IHE provides Integration Profiles and Technical
 |:--------------------------------------|
 | ![](https://i.imgur.com/hK55SpO.png) |
 
-
++++
 
 IHE defines the  Patient Identifier Domain as a single system or a set of interconnected systems that all share a common identification scheme (an identifier and an assignment process to a patient) and issuing authority for patient identifiers. 
 
@@ -90,9 +93,6 @@ The **Patient Identifier Cross Referencing for HL7v3 (PIXv3)** profile provides 
 
 
 
-
-
-
 | Actor and Transactions               |
 |:--------------------------------------|
 | ![](https://i.imgur.com/YZhNcm2.jpg) |
@@ -106,11 +106,17 @@ The **Patient Identifier Cross Referencing for HL7v3 (PIXv3)** profile provides 
 
 ## Dicom Profiles
 
+---
+
 ### Patient Information Reconciliation (PIR)
 This profile coordinates reconciliation of the patient record when images are acquired for unidentified (e.g. trauma), or misidentified patients. 
 
+---
+
 ### Nuclear Medicine Image (NMI)
 This profile specifies how Nuclear Medicine images and result screens are created, exchanged, used and displayed. 
+
+---
 
 ## Workflows
 ### Scheduled Workflow (SWF) 
@@ -118,16 +124,16 @@ This workflow integrates the ordering, scheduling, imaging acquisition, storage 
 
 Scheduled Workflow establishes a seamless flow of information that supports efficient patient care workflow in a typical imaging encounter. It specifies transactions that maintain the consistency of patient information from registration through ordering, scheduling, imaging acquisition, storage and viewing as shown in the following figure.
 
-
+---
 
 | Scheduled Workflow                   |
 |:--------------------------------------|
 | ![](https://i.imgur.com/TLKLCGd.jpg) |
 | *Source*: IHE                      |
 
-<div style="page-break-after: always;"></div>
 
----
+
++++
 
 ## Anatomy of a Dicom file
 As we already know a DICOM file storing one image contain the image data and data belonging to the patient and data (name, age, etc.) belonging to the examination (date of acquisition, manufacturer, etc.) and identifiers: the study UID, the series’ UID’s, and the image UID’s.  
@@ -136,7 +142,7 @@ The software that interprets the image will have to be able to find, first of al
 
 `(0010,0010)` is the identifier of the patient’s name - „ten-ten is the patient name” as DICOM experts would say. The last thing that we have to learn is that the data, in this case the patient name is enclosed by a pair of the tag shown above:
 
----
++++
 
 
 
@@ -174,6 +180,8 @@ necessary in the instances of a name patient alert because two (or more patients
 have the same name that can be spelled the same, close to being spelled the same
 and/or pronounced the same.
 
+---
+
 >![](https://i.imgur.com/DiPYycK.png) NOTE: The patient’s room number should not be used as a patient identifier; room numbers are not person-specific identifiers, since patients can be moved from room to room
 
 
@@ -188,6 +196,8 @@ All patients undergoing a surgical procedure should wear an identifying marker.
 ### HL7 PID Segment
 The HL7 PID segment is found in every type of ADT message (i.e. ADT-A01, ADT-A08, etc.) and contains 30 different fields with values ranging from patient ID number, to patient sex, to address, to marital status, to citizenship. The PID segment provides important identification information about the patient and, in fact, is used as the primary means of communicating the identifying and demographic information about a patient between systems. 
 
+---
+
 The HL7 standard allows for several different types of patient identification numbers in the first four fields of the PID segment. 
 
 | Sequence |           Element Name                               |
@@ -197,6 +207,7 @@ The HL7 standard allows for several different types of patient identification nu
 | PID-3:   | Patient ID (Internal ID) – the primary, unique patient identifier number used by the facility |
 | PID-4:   |  Alternate Patient ID – an alternate, additional, temporary or pending patient identification number |
 
+---
 
 #### Example
 The PID segment is shown in red.
@@ -205,14 +216,10 @@ The PID segment is shown in red.
 
 ---
 
-
-
 ## HL7 Version 3 - CCD
 The Continuity of Care Document (CCD) is built using HL7 Clinical Document Architecture (CDA) elements and contains data that is defined by the ASTM Continuity of Care Record (CCR). It is used to share summary information about the patient within the broader context of the personal health record.
 
-
-
-
+---
 
 | CDA Template Types                   |
 |:--------------------------------------|
@@ -228,10 +235,9 @@ The Continuity of Care Document (CCD) is built using HL7 Clinical Document Archi
 ### Record Target Section
 The recordTarget element of the header identifies the patient associated with the document and contains no narrative component.
 
-
++++
 
 Example
-
 
  ```xml
     <recordTarget>
@@ -297,26 +303,31 @@ Example
 ```
 
 
-<div style="page-break-after: always;"></div>
 
 ---
 
 ## HIE Sources
 
-
+---
 
 ### Record Locator Service
-**Record Locator Service (RLS)** — The Record Locator Service is the only new piece of infrastructure required by the Health Information Environment. A RLS is subject to privacy and security requirements, and is based on open standards set by the Standards and Policy Entity. 
+**Record Locator Service (RLS)** — The Record Locator Service is the only new piece of infrastructure required by the Health Information Environment. A RLS is subject to privacy and security requirements, and is based on open standards set by the Standards and Policy Entity.  
+---
+
 The RLS holds information authorized by the patient about where authorized information can be found, but not the actual information the records may contain. It thus enables a separation, for reasons of security, privacy, and the preservation of the autonomy of the participating entities, of the function of locating authorized records from the function of transferring them to authorized users.  
 
+---
+
 > ![](https://i.imgur.com/DiPYycK.png) INFO: Release of information from one entity to another is  subject to authorization requirements between those parties; in certain sensitive treatment situations patients or providers may choose not to share information. 
+
+@ul
+
 > * RLSs are operated by multi-stakeholder collaboratives at each sub-network and are built on the current use of Master Patient Indices.  
 > * The Record Locator Service needs to enable a care professional looking for a specific piece of information (PCP visit or ER record) to find it rapidly. An open design question is how and where in the model this capability can best be accomplished.
 
+@ulend
 
 ## Message Processing
-
-
 
 
 | Message Processing Workflow          |
@@ -328,8 +339,7 @@ The RLS holds information authorized by the patient about where authorized infor
 
 
 The Message Processor provides all the capibilites of extracting Patient data from all HL7 Message Types.  The following are examples from a Message processor application.
-
-
+---
 
 ### Processing HL7 ADT Message Types
 
@@ -357,8 +367,6 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 
 
 ### Extracting Patient information from FHIR resources
-
-
 
 
 | Extracting Patient information from FHIR Resources example |
@@ -408,7 +416,8 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 
 #### Device Twin example
 
-```
+++++
+
 {
     "deviceId": "devA",
     "etag": "AAAAAAAAAAc=", 
@@ -465,7 +474,7 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 
 #### Facial Recognition 
 
-
+@ol
 
 1. When a patient is admitted, a front facing photo is taken.
 2. The photo is stored either locally or in Azure Blob Storage.
@@ -473,6 +482,8 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 4. Once the Processor Service receives the message it is added to the HL7 FHIR Patient Resource.
 5. When the patient is brought into  the Operating Room, a facial scan is performed. 
 6. It is verified using the [Azure Cogitative Face API Service](https://docs.microsoft.com/en-us/azure/cognitive-services/face/overview).
+
+@olend
 
 The following figure shows the mapping between the HL7 Version 2.x and FHIR Patent Resource.
 
@@ -490,6 +501,8 @@ The following figure shows the mapping between the HL7 Version 2.x and FHIR Pate
 The HL7 FHIR **Procedure Resource** is used to record the details of procedures performed on a patient.  
 
 This resource provides summary information about the occurrence of the procedure and is not intended to provide real-time snapshots of a procedure as it unfolds.
+
++++
 
 The following is the resource template
 
