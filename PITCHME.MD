@@ -43,7 +43,6 @@ There are several sources for identifying a patient in HL7 messaging standards.
 IHE is a profiling organization. IHE provides Integration Profiles and Technical Frameworks that can be used for guidance in identifying Patient Identification.
 
 ---
-<div style="page-break-after: always;"></div>
 
 ### IHE IT Infrastructure Domain Profiles
 
@@ -85,7 +84,6 @@ The **Patient Identifier Cross Referencing (PIX)** profile supports the cross-re
 ### Cross-Community Patient Discovery (XCPD)
 The **Cross-Community Patient Discovery (XCPD)** profile supports the means to locate communities which hold patient relevant health data.  
 
-<div style="page-break-after: always;"></div>
 
 ---
 
@@ -106,7 +104,7 @@ The **Patient Identifier Cross Referencing for HL7v3 (PIXv3)** profile provides 
 
 ---
 
-<div style="page-break-after: always;"></div>
+
 
 ## Dicom Profiles
 
@@ -142,7 +140,7 @@ The software that interprets the image will have to be able to find, first of al
 
 ---
 
-<div style="page-break-after: always;"></div>
+
 
 Here is a decoded segment of the DICOM information found in a DICOM file:
 
@@ -163,7 +161,7 @@ The following table defines the attributes relevant to identifying a patient
 | Medical Record Locator            | (0010,1090) | An identifier used to find the patient's existing medical record (e.g., film jacket). |
 | Referenced Patient Photo Sequence | (0010,1100) | A photo to confirm the identity of a patient.<br>Only a single Item is permitted in this Sequence. |
 
-<div style="page-break-after: always;"></div>
+
 
 ---
 
@@ -184,7 +182,7 @@ and/or pronounced the same.
 ### Standard of Practice II
 All patients undergoing a surgical procedure should wear an identifying marker.
 
-<div style="page-break-after: always;"></div>
+
 ---
 
 ## HL7 Version 2.x messages
@@ -209,7 +207,7 @@ The PID segment is shown in red.
 
 ---
 
-<div style="page-break-after: always;"></div>
+
 
 ## HL7 Version 3 - CCD
 The Continuity of Care Document (CCD) is built using HL7 Clinical Document Architecture (CDA) elements and contains data that is defined by the ASTM Continuity of Care Record (CCR). It is used to share summary information about the patient within the broader context of the personal health record.
@@ -227,7 +225,6 @@ The Continuity of Care Document (CCD) is built using HL7 Clinical Document Archi
 ---
 
 
-<div style="page-break-after: always;"></div>
 
 
 ### Record Target Section
@@ -328,7 +325,7 @@ The RLS holds information authorized by the patient about where authorized infor
 |:------------------------------------|
 | ![](https://i.imgur.com/laeKK2Y.png) |
 
-<div style="page-break-after: always;"></div>
+
 ---
 
 
@@ -347,7 +344,6 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 ---
 
 
-<div style="page-break-after: always;"></div>
 
 ### Extracting Patient information from ADT Message Types
 
@@ -360,7 +356,7 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 
 ---
 
-<div style="page-break-after: always;"></div>
+
 
 ### Extracting Patient information from FHIR resources
 
@@ -373,7 +369,7 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 | ![](https://i.imgur.com/CSHQPWi.png)     |
 
 
-<div style="page-break-after: always;"></div>
+
 
 
 ---
@@ -391,7 +387,7 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 
 ### Device Configuration
 
-<div style="page-break-after: always;"></div>
+
 ---
 
 | Configuration |
@@ -400,7 +396,7 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 | *source*: <a href="https://docs.microsoft.com/en-us/azure/iot-hub/tutorial-device-twins" target="_blank">Configure your devices from a back-end service </a>|
 
 
-<div style="page-break-after: always;"></div>
+
 ---
 
 | Device Twins |
@@ -410,7 +406,7 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 
 
 ---
-<div style="page-break-after: always;"></div>
+
 
 #### Device Twin example
 
@@ -465,7 +461,7 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 ```
 
 ---
-<div style="page-break-after: always;"></div>
+
 
 ## Extended Patient Identification  
 
@@ -490,7 +486,7 @@ The following figure shows the mapping between the HL7 Version 2.x and FHIR Pate
 
 ---
 
-<div style="page-break-after: always;"></div>
+
 
 ## Post Surgury Reporting
 The HL7 FHIR **Procedure Resource** is used to record the details of procedures performed on a patient.  
@@ -566,9 +562,3 @@ The following is the resource template
 <a href="http://hl7.org/fhir/" target="_blank">FHIR® – Fast Healthcare Interoperability Resources</a>  
 
 <a href="https://docs.microsoft.com/en-us/azure/iot-fundamentals/" target="_blank">Azure IoT Fundamentals</a>
-
-
-
-
-
-
