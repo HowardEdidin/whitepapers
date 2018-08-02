@@ -1,5 +1,7 @@
 
----?image=assets/cognizant-log-small.png&position=left 25px top 25px&size=20%
+---?image=assets/cognizant-log-small.png&position=left 25px top 25px&size=17%
+
+@title[] Establishing Patient Identification
 
 
 # Establishing Patient Identification
