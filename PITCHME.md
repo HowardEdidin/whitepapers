@@ -105,12 +105,9 @@ The **Patient Identifier Cross Referencing for HL7v3 (PIXv3)** profile provides 
 
 +++
 
+#### Actor and Transactions
 
-
-| Actor and Transactions               |
-|:-------------------------------------|
-| ![](https://i.imgur.com/YZhNcm2.jpg) |
-| *Source*:  IHE                      |
+![](https://i.imgur.com/YZhNcm2.jpg)    
 
 
 
@@ -146,12 +143,16 @@ Scheduled Workflow establishes a seamless flow of information that supports effi
 
 
 
-+++
+---
 
 ## Anatomy of a Dicom file
 As we already know a DICOM file storing one image contain the image data and data belonging to the patient and data (name, age, etc.) belonging to the examination (date of acquisition, manufacturer, etc.) and identifiers: the study UID, the series’ UID’s, and the image UID’s.  
 
+---
+
 The software that interprets the image will have to be able to find, first of all, the part of the DICOM file containing the image; also all of the identifiers and the other data contained in the DICOM file. The DICOM standard has a special pair of characters, the parentheses and the comma: ’(’ and ’)’ and ’,’. Now, numbers of 2x4 hexadecimal digits enclosed by the these parentheses and separated by the comma uniquely identify a specific DICOM field or data. For instance this tag:
+
+---
 
 `(0010,0010)` is the identifier of the patient’s name - „ten-ten is the patient name” as DICOM experts would say. The last thing that we have to learn is that the data, in this case the patient name is enclosed by a pair of the tag shown above:
 
