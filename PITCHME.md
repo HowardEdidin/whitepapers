@@ -1,6 +1,6 @@
-@title[ Establishing Patient Identification]
 
-![logo](https://i.imgur.com/tyspv4j.png)
+
+---?image=assets/images/cognizant-log-small.png&position=left 25px top 25px
 
 # Establishing Patient Identification
 
