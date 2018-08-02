@@ -414,7 +414,7 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 
 #### Device Twin example
 
-```json
+```
 {
     "deviceId": "devA",
     "etag": "AAAAAAAAAAc=", 
@@ -439,7 +439,7 @@ The Message Processor provides all the capibilites of extracting Patient data fr
         "$etag": "124",
         "patient": {
             "id": "233x3dd3frr",
-            'id2': "medddddd"
+            'id2': "212-234-8734"
         
         }
     },
@@ -499,7 +499,7 @@ This resource provides summary information about the occurrence of the procedure
 
 The following is the resource template
 
-```json
+```
 {
 
 
