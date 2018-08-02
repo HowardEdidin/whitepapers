@@ -84,13 +84,14 @@ There are three IHE profiles that support Patient Identification.
 ### Patient Identifier Cross Referencing (PIX)
 The **Patient Identifier Cross Referencing (PIX)** profile supports the cross-referencing of patient identifiers from multiple Patient Identifier Domains.  HL7 V2.x is the message format.  Supports determination of matching patient identifiers (ADT^A01, A04, A05, A08, A31, A40; Q23)
 
+---
 
 | Process Flow                         |
 |:--------------------------------------|
 | ![](https://i.imgur.com/H55QXWc.png) |
 | *Source*: IHE                    |
 
-
+---
 
 ### Cross-Community Patient Discovery (XCPD)
 The **Cross-Community Patient Discovery (XCPD)** profile supports the means to locate communities which hold patient relevant health data.  
