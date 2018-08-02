@@ -16,15 +16,21 @@
 
 ## Protected Health Information
 
-+++ 
-@ul
+---
 
 > ![](https://i.imgur.com/dMrFdY8.png) The **HIPAA Privacy Rule** protects most individually identifiable health information held or  transmitted by a covered entity or its business associate, in any form or medium, whether electronic, on paper, or oral. The Privacy Rule calls this information protected health information (PHI)2. Protected health information is information, including demographic information, which relates to:  
-> * the individual’s past, present, or future physical or mental health or condition,
-> * the provision of health care to the individual, or
-> * the past, present, or future payment for the provision of health care to the individual, and that identifies the individual or for which there is a reasonable basis to believe can be used to identify the individual. Protected health information includes many common identifiers (e.g., name, address, birth date, Social Security Number) when they can be associated with the health information listed above.
+
+---
+
+@ul
+
+* the individual’s past, present, or future physical or mental health or condition,
+* the provision of health care to the individual, or
+* the past, present, or future payment for the provision of health care to the individual, and that identifies the individual or for which there is a reasonable basis to believe can be used to identify the individual. Protected health information includes many common identifiers (e.g., name, address, birth date, Social Security Number) when they can be associated with the health information listed above.
+
 
 @ulend
+
  ---
 
 ## Sources 
