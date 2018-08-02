@@ -1,6 +1,6 @@
 
+---?image=assets/cognizant-log-small.png&position=left 25px top 25px
 
----?image=assets/images/cognizant-log-small.png&position=left 25px top 25px
 
 # Establishing Patient Identification
 
