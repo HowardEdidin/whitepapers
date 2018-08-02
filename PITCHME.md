@@ -600,5 +600,6 @@ The following is the resource template
 
 <a href="https://docs.microsoft.com/en-us/azure/iot-fundamentals/" target="_blank">Azure IoT Fundamentals</a>
 
+---
 
-
+---?image=assets/cognizant-log-small.png&position=center&size=25%
