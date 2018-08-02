@@ -1,7 +1,5 @@
 # Establishing Patient Identification
 
-
-
 ## Key Points
 
 @ul
@@ -11,7 +9,7 @@
 
 @ulend
 
----
++++
 
 
 ## Protected Health Information
@@ -21,7 +19,7 @@
 > * the provision of health care to the individual, or
 > * the past, present, or future payment for the provision of health care to the individual, and that identifies the individual or for which there is a reasonable basis to believe can be used to identify the individual. Protected health information includes many common identifiers (e.g., name, address, birth date, Social Security Number) when they can be associated with the health information listed above.
 
- ---
+ +++
 
 ## Sources 
 There are several sources for identifying a patient in HL7 messaging standards.
@@ -37,7 +35,7 @@ There are several sources for identifying a patient in HL7 messaging standards.
 
 @ulend
 
----
++++
 
 ### IHE (Integrating the Healthcare Enterprise)
 IHE is a profiling organization. IHE provides Integration Profiles and Technical Frameworks that can be used for guidance in identifying Patient Identification.
