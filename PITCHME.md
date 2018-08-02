@@ -11,12 +11,13 @@
 
 @ulend
 
-+++
+---
 
 
 ## Protected Health Information
+
++++ 
 > ![](https://i.imgur.com/dMrFdY8.png) The **HIPAA Privacy Rule** protects most individually identifiable health information held or transmitted by a covered entity or its business associate, in any form or medium, whether electronic, on paper, or oral. The Privacy Rule calls this information protected health information (PHI)2. Protected health information is information, including demographic information, which relates to:  
-> 
 
 @ul
 
