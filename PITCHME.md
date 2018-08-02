@@ -1,3 +1,5 @@
+![logo](https://i.imgur.com/tyspv4j.png)
+
 # Establishing Patient Identification
 
 ---
