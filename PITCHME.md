@@ -1,8 +1,6 @@
 
 ---?image=assets/cognizant-log-small.png&position=left 25px top 25px&size=17%
 
-@title[] Establishing Patient Identification
-
 
 # Establishing Patient Identification
 
@@ -148,7 +146,7 @@ Scheduled Workflow establishes a seamless flow of information that supports effi
 
 
 
----
++++
 
 ## Anatomy of a Dicom file
 As we already know a DICOM file storing one image contain the image data and data belonging to the patient and data (name, age, etc.) belonging to the examination (date of acquisition, manufacturer, etc.) and identifiers: the study UID, the series’ UID’s, and the image UID’s.  
@@ -331,9 +329,10 @@ Example
 
 ## HIE Sources
 
+---
 
+### Record Locator Service  
 
-### Record Locator Service
 **Record Locator Service (RLS)** — The Record Locator Service is the only new piece of infrastructure required by the Health Information Environment. A RLS is subject to privacy and security requirements, and is based on open standards set by the Standards and Policy Entity. 
 The RLS holds information authorized by the patient about where authorized information can be found, but not the actual information the records may contain. It thus enables a separation, for reasons of security, privacy, and the preservation of the autonomy of the participating entities, of the function of locating authorized records from the function of transferring them to authorized users.  
 
@@ -390,7 +389,7 @@ The Message Processor provides all the capibilites of extracting Patient data fr
 ### Extracting Patient information from FHIR resources
 
 
-
++++
 
 | Extracting Patient information from FHIR Resources example |
 |:------------------------------------------|
