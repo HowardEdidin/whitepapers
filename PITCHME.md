@@ -103,12 +103,12 @@ The **Cross-Community Patient Discovery (XCPD)** profile supports the means to l
 The **Patient Identifier Cross Referencing for HL7v3 (PIXv3)** profile provides cross-referencing of patient identifiers from multiple Patient Identifier Domains. HL7 V3 is the message format. 
 
 
----
++++
 
 
 
 | Actor and Transactions               |
-|:--------------------------------------|
+|:-------------------------------------|
 | ![](https://i.imgur.com/YZhNcm2.jpg) |
 | *Source*:  IHE                      |
 
